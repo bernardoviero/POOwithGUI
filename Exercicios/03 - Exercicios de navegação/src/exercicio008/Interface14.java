@@ -172,9 +172,9 @@ public class Interface14 extends javax.swing.JFrame {
             ArrayList listaContato = arq.leitor("agenda");
             
             int index = 0;
-            for (int i = 0; i <= ((listaContato.size() + 1) / 3) - 1; i++) {
+            for (int i = 0; i < ((listaContato.size() + 1) / 3) - 1; i++) {
                 System.out.println(i);
-                for (int j = 0; j <= ((listaContato.size() + 1) / 3) - 1; j++) {
+                for (int j = 0; j < ((listaContato.size() + 1) / 3) - 1; j++) {
                     jTable1.setValueAt(listaContato.get(index), i, j);
                     index++;
                 }
