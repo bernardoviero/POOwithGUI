@@ -53,6 +53,7 @@ public class Controller {
         DefaultTableModel DefaultTableModel = null;
         DefaultTableModel model = ((DefaultTableModel) exibir.getjTable_exibicao().getModel());
         listaFuncionarios = dao.listarFuncionarios();
+        model.setRowCount(0);
         for(int i=0; i<listaFuncionarios.size();i++){
             model.addRow(new Object[]{listaFuncionarios.get(i).getID(),listaFuncionarios.get(i).getNome(),listaFuncionarios.get(i).getEmail(),listaFuncionarios.get(i).getCargo()});
         }
