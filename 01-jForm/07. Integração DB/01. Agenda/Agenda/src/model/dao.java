@@ -47,4 +47,20 @@ public class dao {
             return null;
         }
     }
+    public void inserirFuncionario(Funcionarios funcionarios){
+        String insert = "INSERT INTO Funcionarios(DS_Nome,DS_Email,DS_Cargo)" +"values(?,?,?)";
+        try{
+            Connection con = conectar();
+            PreparedStatement pst = con.prepareStatement(insert);
+            
+            pst.setString(1, funcionarios.getNome());
+            pst.setString(2, funcionarios.getEmail());
+            pst.setString(3, funcionarios.getCargo());
+            pst.execute();
+            
+            con.close();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+    }
 }
