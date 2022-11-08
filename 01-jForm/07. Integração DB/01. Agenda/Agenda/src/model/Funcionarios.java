@@ -45,4 +45,9 @@ public class Funcionarios {
         this.cargo = cargo;
     }
     
+    @Override
+    public String toString(){
+        return"\nID: "+ID +"\nNome: "+nome+"\nEmail: "+email+"\nCargo: "+cargo;
+    }
+    
 }

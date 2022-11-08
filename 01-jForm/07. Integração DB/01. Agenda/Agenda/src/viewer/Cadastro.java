@@ -14,6 +14,14 @@ public class Cadastro extends javax.swing.JFrame {
         return jButton_visualizar;
     }
 
+    public JButton getjButton_retornar() {
+        return jButton_retornar;
+    }
+
+    public void setjButton_retornar(JButton jButton_retornar) {
+        this.jButton_retornar = jButton_retornar;
+    }
+
     public void setjButton_visualizar(JButton jButton_visualizar) {
         this.jButton_visualizar = jButton_visualizar;
     }
